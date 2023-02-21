@@ -8,6 +8,7 @@ Members-only BBS for practice
 CREATE TABLE mbbs_users (
     user_id int(11) NOT NULL AUTO_INCREMENT, 
     username varchar(15) NOT NULL UNIQUE, 
+    user_group bit NOT NULL '0', 
     password varchar(255) NOT NULL, 
     nickname varchar(45) NOT NULL, 
     email char(80), 
